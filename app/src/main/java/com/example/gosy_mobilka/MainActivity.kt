@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val callback = object: VKAuthCallback {
             override fun onLogin(token: VKAccessToken) {
                 // User passed authorization
+
             }
 
             override fun onLoginFailed(errorCode: Int) {
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             super.onActivityResult(requestCode, resultCode, data)
         }
     }
+
 
 
 }
