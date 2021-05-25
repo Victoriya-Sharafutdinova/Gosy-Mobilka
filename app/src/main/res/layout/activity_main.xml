@@ -4,4 +4,193 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="665dp"
+        android:onClick="toPreferences"
+        android:text="Preferences"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonExpandable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="665dp"
+        android:onClick="toExpandable"
+        android:text="Expandable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toEndOf="@+id/buttonPreferences"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="294dp"
+        android:layout_marginBottom="522dp"
+        android:onClick="toHandler"
+        android:text="Handler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPreferences" />
+
+    <Button
+        android:id="@+id/buttonFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="521dp"
+        android:onClick="toFragment"
+        android:text="Fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/buttonHandler"
+        app:layout_constraintTop_toBottomOf="@+id/buttonExpandable"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonAsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="297dp"
+        android:layout_marginBottom="440dp"
+        android:onClick="toAsyncTask"
+        android:text="AsyncTask"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHandler"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="350dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAsyncTask"></TextView>
+
+    <Button
+        android:id="@+id/buttonPreferenceActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="277dp"
+        android:text="PreferenceActivity"
+        android:onClick="toPreferenceActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAsyncTask"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonCursorLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="17dp"
+        android:text="CursorLoader"
+        android:onClick="toCursorLoader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonPreferenceActivity"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFragment"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <Button
+        android:id="@+id/buttonSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="189dp"
+        android:text="Spinner"
+        android:onClick="toSpinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPreferenceActivity" />
+
+    <Button
+        android:id="@+id/buttonParcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="187dp"
+        android:text="Parcelable"
+        android:onClick="toParcelable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPreferenceActivity"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="187dp"
+        android:text="Tab"
+        android:onClick="toTab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonParcelable"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCursorLoader" />
+
+    <Button
+        android:id="@+id/buttonUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="43dp"
+        android:text="Users"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonParcelable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ class VKontakteActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_v_kontakte)
+        //setContentView(R.layout.activity_v_kontakte)
 /*
         //Получаем токен
         access_token = VKAccessToken.tokenFromSharedPreferences(this, "VK_ACCESS_TOKEN");
